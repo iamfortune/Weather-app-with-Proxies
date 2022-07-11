@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+</head>
+
+<style>
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td,
+    th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+</style>
+
+<body>
+    <h1 style="text-align: center">Weather forecast</h1>
+    <div style="
+        float: left;
+        width: 300px;
+        height: 200px;
+        background-color: red;
+        margin-left: 50px;
+      ">
+        <label>enter city name</label>
+        <input type="text" value="" id="city" onchange="check('state')" /><br />
+        <label>enter state name</label>
+        <input type="text" value="" id="state" onchange="check('country')" /><br />
+        <label>enter country name</label>
+        <input type="text" value="" id="country" onchange="{proxyPerson.name ='load'}" />
+        <br />
+
+        <input type="submit" id="load" onclick="{proxyPerson}" value="weather forecast" />
+    </div>
+    <div style="
+        float: right;
+        width: 300px;
+        height: 200px;
+        background-color: red;
+        margin-right: 50px;
+      ">
+        <table>
+            <tr>
+                <td>location</td>
+                <td><span id="location"></span></td>
+            </tr>
+            <tr>
+                <td>Status</td>
+                <td><span id="status"></span></td>
+            </tr>
+            <tr>
+                <td>Description</td>
+                <td><span id="description"></span></td>
+            </tr>
+            <tr>
+                <td>Pressure</td>
+                <td><span id="pressure"></span></td>
+            </tr>
+            <tr>
+                <td>Humidity</td>
+                <td><span id="humidity"></span></td>
+            </tr>
+            <tr>
+                <td>temperature</td>
+                <td><span id="temperature"></span></td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+<script type="text/javascript" src="proxy.js"></script>
+
+</html>
