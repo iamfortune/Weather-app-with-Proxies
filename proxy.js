@@ -11,7 +11,7 @@ let location = {
 
 const handler = {
     set(target, property, value) {
-        let apikey = "0abe276c48b3362cd8a7950b9382ee37";
+        let apikey = "YOUR_API_KEY";
         let city = document.getElementById("city").value;
         let state = document.getElementById("state").value;
         let country = document.getElementById("country").value;
